@@ -18,13 +18,21 @@ const App = () => {
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="Inicio"
+          screenOptions ={{
+              title: "Componente Principal",
+              headerTitleAlign: 'center',
+              headerStyle:{
+                backgroundColor: '#F4511E'
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle:{
+                fontWeight: 'bold'
+              }
+            }}
         >
           <Stack.Screen
             name="Inicio"
             component={Inicio}
-            options={{
-              title: "Componente Principal"
-            }}
           ></Stack.Screen>
           <Stack.Screen
             name="Nosotros"
